@@ -1,0 +1,186 @@
+/* In your CSS file (home.css) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+body{
+    background-color: #fff;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+h1 {
+    color: black;
+
+}
+h1 img{
+    width: 30%;
+    min-height: 3vh;
+}
+
+h1 span {
+    font-size: 120px;
+    font-family: 'Lobster', cursive;
+}
+nav{
+    background-color: white;
+    border-bottom: 3px solid white;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+/* Define the typewriter animation */
+@keyframes typing {
+    from {
+        width: 50%;
+    }
+    to {
+        width: 100%;
+        border-right: none;
+    }
+}
+
+/* Apply the typewriter animation to the text */
+.typewriter h1 {
+    overflow: hidden; /* Hide overflowing characters */
+    white-space: nowrap; /* Prevent line breaks */
+    margin: 0;
+    font-size: 50px;
+    animation: typing 3s steps(40); /* Adjust duration and steps as needed */
+}
+
+#home {
+    background-color: #ffffff;
+    color: #101010;
+}
+
+#about {
+    background-color: #101010;
+    color: #fff;
+}
+#projects {
+    background-color: #fff;
+    color: #101010;
+}
+#administration {
+    background-color: #2ecc71;
+}
+
+#signup {
+    background-color: #f39c12;
+}
+
+#more {
+    background-color: #007bff;
+    color: #ffffff;
+}
+nav a{
+    font-family: "Cambria Math", serif;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 30px;
+    
+}
+nav a:hover{
+    color: #2ecc71;
+    border-bottom: 3px solid blue;
+}
+nav a.active {
+    border-bottom: 4px solid blue;
+    background-color: #ffffff;
+    color: #2ecc71;
+}
+a:visited {
+    color: #007bff; /* Color for visited links */
+}
+nav li{
+    font-size: 40px;
+    color: blue;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style: none;
+}
+nav li:hover{
+    color: red;
+
+}
+nav i {
+    margin-left: 20px;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+section{
+    width:95%;
+    min-height: 50vh;
+    border: 3px solid blue;
+    margin-left:50px;
+    margin-top: 20px;
+    border-radius: 11px;
+    display: none;
+}
+section.active {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section div{
+    border:2px solid black;
+    width: 60%;
+    min-height: 30vh;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+section h2{
+    font-size: 40px;
+    border-bottom: 3px solid black;
+    box-shadow: 10px 10px 20px black;
+}
+section div:hover{
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px black;
+    border: 2px solid blue;
+    background-color: #fff;
+}
+section div h3{
+    margin-top: 50px;
+    font-size: 30px;
+}
+section div p{
+    font-size: 20px;
+}
+section button{
+    width: 40%;
+    min-height: 10vh;
+    background-color: transparent;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+section button:hover{
+    background-color: green;
+    color: #ffffff;
+}
+section img{
+    width: 100%;
+    min-height: 10vh;
+    transition: transform 0.3s ease-in-out;
+}
+section img:hover{
+    transform: scale(0.8);
+}
+section p{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 20px;
+}
